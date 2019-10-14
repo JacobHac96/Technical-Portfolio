@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="ss.css">
+    <title>Life Out of School</title>
+</head>
+
+<!-- navbar is a list used to get to other webpages -->
+<div class="navbar">
+  <div class="dropdown">
+  <a href="index.html" target="_blank">Home</a>
+</div>
+  <div class="dropdown">
+    <button class="dropbtn">University Studies
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Transcriptpdf.html" target="_blank">Transcript.pdf</a>
+      <a href="Transcript.html" target="_blank">Transcript webpage</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Life Out of School
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="LifeOutofSchool.html" target="_blank">Life Out of School</a>
+        <a href="Family.html" target="_blank">Family Life</a>
+      </div>
+      </div>
+      <div class="dropdown">
+        <a href="WorkHistory.html" target="_blank">Work History</a>
+        </div>
+
+  </div>
+  <!-- slideshow is used to display photos in an automatic rotation -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="bills.jpg" alt="nfl" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="sabres.png" alt="nhl" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="board.jpg" alt="baord" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="hockey.jpg" alt="hockey" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="me.jpg" alt="me" style="width:100%">
+</div>
+</div>
+
+
+<!-- script t0 make slide show rotate throgh images -->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}
+</script>
+
+<!-- paragraph about images and life outside of school and work -->
+<p>The Above slideshow shows you some of the stuff that I enjoy outside of work and school.
+The main two sports I enjoy watching are Hockey and Football. My favorites Teams are the Buffalo Sabres and the Buffalo Bills.
+Besides watching professional sports I also enjoy playing sports, and my favorite sport to play is Hockey. I used to play hockey for St. Mary’s Lancaster High School.<br>
+The picture in in the above slide show is an old picture of when I use to play, the image was taken by a poor quality iPhone, which is why it appears to be pixelated.<br>
+Aside from playing Hockey I do enjoy playing football, basketball and occasionally I play volleyball. In addition to sports I also really<br> enjoy longboarding. The image of the longboard in the slideshow is a board That I had my cousin custom paint. The of the board is a t.v.<br> show, "South Park". The board is a carving board, which means its smaller than most long boards to allow for quicker turns. <br>
+I enjoy taking the long board to my cousin’s house in the town of Boston, New York. There are a ton of long hilly roads to ride and you can get a lot of speed riding on roads that have long and gradual declines.
+</p>
+
+<hr />
+WebSite Developer: Jacob Hacker  © 2018
+</body>
+</html>

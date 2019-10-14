@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- this page is about family info and is linked from the main html page called index -->
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="ss0.css">
+  <title>Life Out of School</title>
+</head>
+<!-- navbar is used to make a bar at the top of the page to navigate to other html pages -->
+<div class="navbar">
+  <div class="dropdown">
+  <a href="index.html" target="_blank">Home</a>
+</div>
+  <div class="dropdown">
+    <button class="dropbtn">University Studies
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Transcriptpdf.html" target="_blank">Transcript.pdf</a>
+      <a href="Transcript.html" target="_blank">Transcript webpage</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Life Out of School
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="LifeOutofSchool.html" target="_blank">Life Out of School</a>
+        <a href="Family.html" target="_blank">Family Life</a>
+      </div>
+      </div>
+      <div class="dropdown">
+        <a href="WorkHistory.html" target="_blank">Work History</a>
+        </div>
+
+  </div>
+  <!-- this div has a paragraph about the image as well as it makes the img a clickable button that opens a youtube video -->
+  <h2>Click A name to see that person</h2>
+  <div id="dg" style="display: none;">
+  <a href="https://www.youtube.com/watch?v=TMniOnOfvNE&feature=youtu.be" target="_blank">
+  <img src="dog.jpg" alt="HTML tutorial">
+  </a>
+  </div>
+
+  <div id="ii">
+  <img id="myImage" src="fam.jpg" alt="myI" width="800" height="500"><br>
+  </div>
+  <!-- everytime a button is pressed the image is changed and the info below the image is changed,  every div below has an id that id dictates which image and text iis displayed-->
+  <button onclick="document.getElementById('myImage').src='fam.jpg'; myFunction('fam','ii','s1','s2','s3','p4','dg','dg1')">Family</button>
+  <button onclick="document.getElementById('myImage').src='sam.jpg'; myFunction('s1','ii','fam','s2','s3','p4','dg','dg1')">Samantha Hacker</button>
+  <button onclick="document.getElementById('myImage').src='Kim.jpg'; myFunction('s2','ii','fam','s1','s3','p4','dg','dg1')">Kimberly Hacker</button>
+  <button onclick="document.getElementById('myImage').src='steph.jpg'; myFunction('s3','ii','fam','s1','s2','p4','dg','dg1')">Stephanie Hacker</button>
+  <button onclick="document.getElementById('myImage').src='par.jpg'; myFunction('p4','ii','fam','s1','s2','s3','dg','dg1')">My Parents Jim/Michelle Hacker</button>
+  <button onclick="document.getElementById('myImage').src='par.jpg'; myFunction('dg','dg1','fam','ii','s1','s2','s3','p4')">Dog</button>
+  <div id="fam">
+  This is a picture of the Hacker Family. We are a very close family, if you exclude the fact that my sister Samantha live in Orlando Florida.
+  All of my sisters graduated college, Sam is a 4th grade Teacher, Stephanie is a marketing manager for national fuel, and Kimberly works at a law firm as a secretary.
+  My dad, James Hacker, is a retired Buffalo police officer. He received the medal of valor while he was a cop and numerous other awards. My mom, Michelle Hacker,
+  was a stay at home mom for a good portion of her life. She also works part time at UB as a secretary and she has held other part time jobs while being a great stay at home mom.
+  <br>
+  <br>
+  For information on each person of my family click on the button with their name on it.
+  </div>
+  <div id="s1" style="display: none;">
+  This picture is of my sister Samantha. The dog is Lilly and she is an awesome companion. The man in the picture is my brother in law Josh.
+  He is a sheriff in Florida and he is also on the swat team. They are a great family and plan to have kids in the near future. My sister teaches the fourth grade and tutors those that struggle in her class. She loves to work with kids and is a great person to get advice from. Currently she sits as the faculty leader of all the fourth grade teachers at her school. To give you an idea of what that means, she is leads 6+ teachers, by organizing the fundraisers and helping prioritize what is being taught in the curriculum.
+  </div>
+  <div id="s2" style="display: none;">
+  This is a picture of my sister Kimberly. The man by her side is her fiancé Nick. Nick is security guard for a local security contractor.
+  He loves hockey more than I do and he is a great friend and loves much of the same things that I love to do. Kim is a secretary for a law firm, but her passion is with helping others. She is still trying to find what she really wants to do in life. She has thought about becoming a school consoler. Their wedding is planned for Summer of 2020 an I can’t wait for Nick to become part of our Family.
+  </div>
+  <div id="s3" style="display: none;">
+  This is a picture of my sister Stephanie. The man by her side is her boyfriend Phil. He is an insurance agent at a local health insurance company. He loves music video games and sports. Stephanie is a manager at national fuel and currently that position is the highest in the company before becoming a Chief Executive Office of a department. She loves to take pictures and tries to help anyone that needs help. A lot of times I will have her help me with my resume and my business attire. She loves to shop for closes and has excellent taste.
+  </div>
+  <div id="p4" style="display: none;">
+  My Parents. James is my father and boy is he a great man. He was a police office for 25+ years. He loves to play basketball and more than that he loves his family. My dad was a workaholic for most of his life putting in numerous hours of overtime as a cop and trying to make buffalo a better place for everyone. Michelle is my mother and she is probably the reason why I am who I am today. Since I can remember she has done as much in her life to make sure I have Succeeded in life. She would make dinner for my even if I was home late after, work or a hockey game. She would clean my room whenever she got a chance. Man if when was not so willingly to make my life easy as it is I am not sure I would still be pursuing a degree in computer science. This degree is very difficult and if my life was any more difficult than it is now I might have not been able to focus as much on school as I currently do.
+  </div>
+  <div id="dg1" style="display: none;">
+  My dog Riley. If you click on the picture, there it will open a new tab of a video of my dog. She is a great companion although her bark is very annoying. She loves to play and is a very hyper dog. She is a jack-Russel mix.
+  </div>
+  <!-- script to make the image and text change bassed on the button pressed -->
+  <script>
+  function myFunction() {
+    for(var arg = 0; arg < arguments.length; ++ arg)
+    {
+      var x = document.getElementById(arguments[arg]);
+      if (arg==0 || arg==1) {
+          x.style.display = "block";
+      }else{
+          x.style.display = "none";
+      }
+    }
+  }
+  </script>
+
+
+
+  </body>
+</html>

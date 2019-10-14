@@ -1,0 +1,203 @@
+/* style sheet for WorkHistory.html */
+h1,h2,h3,h4,h5,h6{
+  color: yellow;
+  font-size: 48px;
+}
+b{
+  font-weight: bold;
+  color: blue;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height:2px;
+    width: 100%;
+    background-color: #E7E7E7;
+    color: Black;
+    text-align: center;
+}
+.header{
+background-color:#A47EA8;
+}
+.container-border{
+  border-width: 2px;
+  border-color: Black;
+  border-style: solid;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 220px;
+}
+
+.left {
+  margin-top: 10px;
+  background-color:#969B56;
+  width: 45%;
+
+}
+.right{
+  margin-top: 10px;
+  background-color:#5E95A9;
+  width: 45%;
+}
+
+.row{
+clear: both;
+}
+body {
+  color:white;
+  background-color: gray;
+}
+
+p{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+}
+p.divs{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+p.footer{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+a:link {
+    font-size: 24px;
+    color:#ff0000;
+    text-decoration: none;
+}
+
+a:visited {
+    font-size: 24px;
+    color:#ff0000;
+    text-decoration: none;
+}
+a:active {
+    font-size: 24px;
+    color:#ff0000;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    height: 28px;
+    background-color: black;
+}
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+table {
+  width: 100%;
+  border: 3px solid black;
+}
+th{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 34px;
+  background-color: black;
+  color: white;
+}
+tr{
+background: #D9D9D9;
+text-align: center;
+}
+ td {
+  color: black;
+  font-size: 34px;
+  padding: 3px;
+  border: none;
+}
+
+.first-half {
+    float: left;
+    width: 50%;
+}
+.second-half {
+    float: right;
+    width: 50%;
+}
+.example1{
+ font-size: 3em;
+ color: #14FF0E;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
